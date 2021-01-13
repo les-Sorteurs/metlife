@@ -1,0 +1,194 @@
+.container {
+  background-color: white;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
+.main {
+  border: 2px solid #3f3f3f;
+  width: 90%;
+  height: 90%;
+}
+.header {
+  height: 20vh;
+  width: 100%;
+  background-color: red;
+  display: flex;
+}
+.left {
+  height: 100%;
+  width: 35%;
+  background-color: white;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 1%;
+}
+.center {
+  height: 100%;
+  width: 45%;
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+}
+.right {
+  height: 100%;
+  width: 20%;
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+}
+.userDetails {
+  color: rgb(85, 84, 84);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 5px;
+}
+.logo {
+  height: 80%;
+  width: auto;
+}
+.navBar {
+  height: 10vh;
+  width: 100%;
+  background-color: #1e63a0;
+}
+.navBarBtn {
+  color: white;
+  height: 100%;
+  min-width: 10vw;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  text-align: center;
+}
+.navBarBtn:hover {
+  background-color: #5ea4ee;
+  font-size: 15px;
+}
+.body {
+  background-color: orange;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+.subscribersBox {
+  width: 50%;
+  height: 50vh;
+  background-color: red;
+}
+.civilityField {
+  list-style: none;
+}
+.civilityField li {
+  display: inline-flex;
+}
+
+#form-outer {
+  background-color: rgb(250, 250, 250);
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 75%;
+  max-width: 900px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 25%;
+  vertical-align: middle;
+}
+
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+#userAge {
+  width: 40px;
+}
+
+.userRatings,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+#submit {
+  background-color: #1a8cff;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+}
+
+#reset {
+  background-color: #1a8cff;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+}
+.dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.radio,
+.checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}
