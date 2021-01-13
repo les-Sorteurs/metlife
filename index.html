@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>MetLife</title>
 </head>
+
 <body>
-    
+
     <div class="container">
         <div class="main">
             <div class="header">
@@ -38,152 +46,51 @@
                 <button class="navBarBtn">
                     Mes Projets Sauvegardés
                 </button>
+                <button class="navBarBtn" id="newSbcripter">
+                    Add Subscripter
+                </button>
 
             </div>
             <div class="body">
-                <div class="subscribersBox">
-                    <div class="subscriberBox">
 
-                        <form id="survey-form" method="GET" action="">
-                            <div class="rowTab">
-                                <div class="rightTab">
-                                  <ul class="civilityField">
-                                    <li class="radio"><label><input name="radio-buttons" value="male"  type="radio" class="userRatings" >M</label></li>
-                                    <li class="radio"><label><input name="radio-buttons" value="female"  type="radio" class="userRatings" >Mme</label></li>
-                                  </ul>
-                                </div>
-                              </div>
+                <div class="subscribersBox" id="subscribersBox">
 
-                              
-                            <div class="rowTab">
-                              <div class="labels">
-                                <label id="name-label" for="name">Nom: </label>
-                              </div>
-                              <div class="rightTab">
-                                <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Entrer votre nom" required>
-                              </div>
-                            </div>
-                            
-                            <div class="rowTab">
-                              <div class="labels">
-                                <label id="fname-label" for="fname">Prénom: </label>
-                              </div>
-                              <div class="rightTab">
-                                <input autofocus type="text" name="fname" id="fname" class="input-field" placeholder="Enter your father's name" required>
-                              </div>
-                            </div>
-                            
-                            <div class="rowTab">
-                              <div class="labels">
-                                <label id="mname-label" for="mname">Mother's Name: </label>
-                              </div>
-                              <div class="rightTab">
-                                <input autofocus type="text" name="mname" id="mname" class="input-field" placeholder="Enter your mother's name" required>
-                              </div>
-                            </div>
-                            
-                            <div class="rowTab">
-                              <div class="labels">
-                                <label id="email-label" for="email">Email: </label>
-                              </div>
-                              <div class="rightTab">
-                                <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
-                              </div>
-                            </div>
-                            <div class="rowTab">
-                              <div class="labels">
-                                <label id="number-label" for="age">Age: </label>
-                              </div>
-                              <div class="rightTab">
-                                <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age" required>
-                              </div>
-                            </div>
-                            
-                            <div class="rowTab">
-                              <div class="labels">
-                                <label id="dob-label" for="dob">D.O.B: </label>
-                              </div>
-                              <div class="rightTab">
-                                <input type="date" name="dob" id="iddob" class="input-field" required>
-                              </div>
-                            </div>
-                            
-                            <div class="rowTab">
-                              <div class="labels">
-                                <label for="department">Department: </label>
-                              </div>
-                              <div class="rightTab">
-                                <select id="dropdown" name="department" class="dropdown">
-                                <option disabled value>Select an option</option>
-                                <option value="it">IT</option>
-                                <option value="cse">CSE</option>
-                                <option value="ece">ECE</option>
-                                <option value="mech">MECH</option>
-                                <option value="civil">CIVIL</option>
-                                <option value="other">Other</option>
-                                </select>
-                              </div>
-                            </div>
-                            
-                            <div class="rowTab">
-                              <div class="labels">
-                                <label for="gender">Gender: </label>
-                              </div>
-                              <div class="rightTab">
-                                <ul style="list-style: none;">
-                                  <li class="radio"><label><input name="radio-buttons" value="male"  type="radio" class="userRatings" >Male</label></li>
-                                  <li class="radio"><label><input name="radio-buttons" value="female"  type="radio" class="userRatings" >Female</label></li>
-                                  <li class="radio"><label><input name="radio-buttons" value="others"  type="radio" class="userRatings" >Others</label></li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="rowTab">
-                              <div class="labels">
-                                <label for="address">Address: </label>
-                              </div>
-                              <div class="rightTab">
-                                <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="address" placeholder="Enter your address here..."></textarea>
-                              </div>
-                            </div>
-                            <div class="rowTab">
-                              <div class="labels">
-                                <label for="pincode">Pincode: </label>
-                              </div>
-                              <div class="rightTab">
-                               <input type="number" name="pincode" id="idpincode" class="input-field" style="height:20px;resize:vertical;" placeholder="6 - - - - -"></div>
-                            </div>
-                            
-                               <div class="rowTab">
-                              <div class="labels">
-                                <label for="language">Language Known: </label>
-                              </div>
-                              <div class="rightTab">
-                                <ul id="language" style="list-style: none;">
-                                  <li class="checkbox"><label><input name="prefer" value="english" type="checkbox" class="userRatings">English</label></li>
-                                  <li class="checkbox"><label><input name="prefer" value="tamil" type="checkbox" class="userRatings">Tamil</label></li>
-                                  <li class="checkbox"><label><input name="prefer" value="hindi" type="checkbox" class="userRatings">Hindi</label></li>
-                                  <li class="checkbox"><label><input name="prefer" value="malayalam" type="checkbox" class="userRatings">Malayalam</label></li>
-                                  <li class="checkbox"><label><input name="prefer" value="kannada" type="checkbox" class="userRatings">Kannada</label></li>
-                                  <li class="checkbox"><label><input name="prefer" value="telugu" type="checkbox" class="userRatings">Telugu</label></li>
-                                  <li class="checkbox"><label><input name="prefer" value="others" type="checkbox" class="userRatings">Others</label></li>
-                                </ul>
-                              </div>
-                            </div>
-                            
-                            <button id="submit" type="submit">Submit</button>
-                            <button id="reset" type="reset">Reset</button>
-                          </form>
-
+                </div>
+                <div class="selectSubscriber">
+                    <div class="col-12">
+                        <h5>Choix du souscripteur</h5>
                     </div>
+                    <div class="col-12 choice" id="choice">
 
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Chaque Assuré est souscripteur
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Autre
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="otherActionBox">
 
                 </div>
             </div>
-            
+
         </div>
     </div>
-<script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
